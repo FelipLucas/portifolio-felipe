@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+}
+
+header h2{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+}
+
+#div-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#div-header a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#div-header a:hover{
+    transition: 0.5s;
+    margin-top: -1%;
+    border-bottom: 2px solid rgb(132, 14, 201);
+}
+
+#section-apresentação{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+#div-apre{
+    padding-top: 15%;
+}
+
+#div-apre h3{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#div-apre h1{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#div-apre span{
+    position: relative;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.span-efect::before{
+    content: "";
+    color:  #fff;
+    animation: palavras 20s infinite;
+}
+
+.span-efect::after{
+    position: absolute;
+    height: 100%;
+    content: "";
+    border-left: 2px solid #fff;
+    right: -3px;
+    opacity: 1;
+    animation: cursor .8s infinite, digitar 20s steps(15) infinite;
+    width: 105%;
+    background-color: #000;
+}
+
+@keyframes palavras{
+    0%,20%{
+        content: "I'm Felipe Lucas...";
+    }
+    21%, 40%{
+        content: "I'm Felipe Dev...";
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid #000;
+    }
+}
+
+@keyframes digitar{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: 105%;
+    }
+}
+
+#div-apre p{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#div-button{
+    display: flex;
+    height: 76vw;
+    background-color: #000000;
+    margin-top: 1rem;
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-button img{
+    width: 500px;
+    height: 500px;
+    margin-right: 2rem;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#div-button button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(132, 14, 201, 0.555);
+    border: none;
+    font-family: "JetBrains", monospace;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+#div-button button:hover{
+    transition: 1s;
+    background-color: #fff;
+    color: #000;
+}
+
+.div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.div-img img{
+    width: 30px;
+    height: 30px;
+}
