@@ -4,18 +4,23 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
+}
+
+::-webkit-scrollbar{
+    overflow: hidden;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
     height: 100%;
     padding-top: 1%;
     padding-left: 15%;
     padding-right: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 13%;
 }
 
 header h2{
@@ -25,8 +30,8 @@ header h2{
 
 #div-header{
     display: flex;
-    position: sticky;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -144,7 +149,7 @@ div.div-img{
     width: 100%;
     height: 76vw;
     background-color: #000000;
-    margin-top: 10rem;
+    margin-top: 12rem;
     justify-content: center;
     align-items: center;
 }
@@ -198,3 +203,24 @@ div.div-img{
     font-size: 14px;
     margin-bottom: 2rem;
 }
+
+#div-footer{
+    display: flex;
+    position: fixed;
+    outline: none;
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+#div-footer button{
+    border: none;
+    cursor: pointer;
+}
+
+#div-footer img{
+    width: 40px;
+    height: 40px;
+}
+
