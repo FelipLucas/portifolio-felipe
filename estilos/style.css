@@ -25,6 +25,7 @@ header h2{
 
 #div-header{
     display: flex;
+    position: sticky;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -33,12 +34,22 @@ header h2{
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
+    position: relative;
 }
 
-#div-header a:hover{
-    transition: 0.5s;
-    margin-top: -1%;
-    border-bottom: 2px solid rgb(132, 14, 201);
+#div-header a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(132, 14, 201);
+    transition: .5s ease;
+}
+
+#div-header a:hover::after{
+    width: 100%;
 }
 
 #section-apresentação{
@@ -92,7 +103,7 @@ header h2{
         content: "I'm Felipe Lucas...";
     }
     21%, 40%{
-        content: "I'm Felipe Dev...";
+        content: "I'm Web developer...";
     }
 }
 
@@ -117,26 +128,50 @@ header h2{
     font-size: 15px;
 }
 
-#div-button{
+div.div-img{
     display: flex;
+    
+    margin-top: 1rem;
+}
+
+.div-img img{
+    width: 30px;
+    height: 30px;
+}
+
+#section-main{
+    display: flex;
+    width: 100%;
     height: 76vw;
     background-color: #000000;
-    margin-top: 1rem;
-    margin-left: 1%;
+    margin-top: 10rem;
     justify-content: center;
     align-items: center;
 }
 
-#div-button img{
+#div-main1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#div-main1 h3{
+    font-family: "JetBrains", monospace;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+#div-main1 img{
     width: 500px;
-    height: 500px;
+    height: 550px;
     margin-right: 2rem;
     object-fit: cover;
-    border: 2px solid #fff;
+    box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
     border-radius: 5px;
 }
 
-#div-button button{
+#section-main button{
     width: 200px;
     height: 50px;
     border-radius: 20px;
@@ -148,20 +183,18 @@ header h2{
     cursor: pointer;
 }
 
-#div-button button:hover{
+#section-main button:hover{
     transition: 1s;
     background-color: #fff;
     color: #000;
 }
 
-.div-img{
+#div-main2{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
+    flex-direction: column;
 }
 
-.div-img img{
-    width: 30px;
-    height: 30px;
+#div-main2 p{
+    font-size: 14px;
+    margin-bottom: 2rem;
 }
