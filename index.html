@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portifólio</title>
 </head>
 <body>
@@ -16,7 +18,20 @@
             <a href="">Contact</a>
             <a href=""><img src="images/icone-link.svg" alt=""></a>
         </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShou()"><img src="https://www.svgrepo.com/show/474244/menu-fries.svg" alt="" class="icon"></button>
+        </div>
+        <div class="menu-mobile">
+            <a href="class="nav-item"">About</a>
+            <a href="class="nav-item"">Projects</a>
+            <a href="class="nav-item"">Abillyts</a>
+            <a href="class="nav-item"">Contact</a>
+            <a href="class="nav-item""><img src="images/icone-link.svg" alt =""></a>
+        </div>
     </header>
+
+    <script src="src/index.js"></script>
+
     <section id="section-apresentação">
         <div id="div-apre">
             <h3>Hello, world!</h3>
@@ -31,10 +46,10 @@
                  <img src="images/WhatsApp Image 2024-01-24 at 17.19.21.jpeg" alt="">
             </div>
             <div id= "div-main2">
-                <p>
-                    Hello there! I'm Felipe Lucas, a dedicated programmer with a <br> passion for crafting engaging and interactive web experiences. <br> My journey in the world of coding began with a fascination for <br> the trinity of web development: HTML, CSS, and JavaScript. <br>
-                    As a front-end enthusiast, I specialize in transforming ideas <br> into visually appealing and seamlessly functional websites. <br> I thrive on the challenge of translating design concepts into <br> responsive user interfaces, ensuring a delightful user experience across <br> devices.
-                    Proficient in HTML, I build the structural foundation of websites, <br> providing a solid backbone for content organization. My mastery of CSS allows <br> me to breathe life into designs, creating aesthetically pleasing layouts and ensuring a <br> visually cohesive presentation. JavaScript is my go-to language for adding interactivity <br>    and dynamic features, bringing websites to life and creating a memorable user journey.</p>
+                <p>Hello there! I'm Felipe Lucas, a dedicated programmer with a passion for crafting engaging and interactive web experiences. My journey in the world of coding began with a fascination forthe trinity of web development: HTML, CSS, and JavaScript.
+                As a front-end enthusiast, I specialize in transforming ideas into visually appealing and seamlessly functional websites. I thrive on the challenge of translating design concepts into responsive user interfaces, ensuring a delightful user experience across devices.
+                </p>
+                <p>Proficient in HTML, I build the structural foundation of websites, providing a solid backbone for content organization. My mastery of CSS allows me to breathe life into designs, creating aesthetically pleasing layouts and ensuring a visually cohesive presentation. JavaScript is my go-to language for adding interactivity and dynamic features, bringing websites to life and creating a memorable user journey.</p>
                 <a href="#">
                     <button>My projects</button>
                 </a>
@@ -56,9 +71,22 @@
         </section>
     </main>
     <footer>
-        <div id="div-footer">
+        <div id="div-footer" onclick="backtop();">
             <button><img src="https://www.svgrepo.com/show/394626/arrow-two-up.svg" alt=""></button>
         </div>
+        <script>
+            window.addEventListener("scroll", function(){
+                let scroll= document.querySelector("#div-footer button")
+                    scroll.classList.toggle("active", window.scrollY > 450)
+            })
+
+            function backtop(){
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                })
+            }
+        </script>
     </footer>
 </body>
 </html>
