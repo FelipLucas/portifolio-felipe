@@ -61,21 +61,72 @@ header h2{
     width: 100%;
 }
 
+/*Menu mobile*/
 .mobile-menu-icon{
     display: none;
 }
 
-.icon{
+.mobile-menu-icon img{
+    font-size: 40px;
+    color: white;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: #fff 0px 0px 20px, #fff 0px 0px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px 0px 5px;
+}
+
+.mobile-menu-icon img{
     width: 30px;
     height: 30px;
 }
 
 .menu-mobile{
     display: none;
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    overflow: hidden;
 }
 
-.open{
-    display: block;
+.menu-mobile.abrir-menu{
+    width: 100%;
+}
+
+.menu-mobile nav{
+    text-align: right;
+}
+
+.menu-mobile nav a{
+    padding: 20 8%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.menu-mobile nav a:hover{
+    background-color: rgb(132, 14, 201);
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: rgb(132, 14, 201);
+    font-size: 30px;
+}
+
+.overley-menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    background-color: #000000a7;
 }
 
 #section-apresentação{

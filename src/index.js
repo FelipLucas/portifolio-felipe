@@ -1,10 +1,7 @@
+let btnMenu = document.getElementById("btn-menu")
+let menu = document.getElementsById("menu-mobile")
 
-//Botão menu//
-function menuShow(){
-    let menuMobile =  document.querySelector(".menu-mobile");
-    if(menuMobile.classlist.contains("open")){
-        menuMobile.classList.remove("open").src ="https://www.svgrepo.com/show/474244/menu-fries.svg";
-    }else{
-        menuMobile.classList.add("open");
-    }
-}
+btnMenu,addEventListener("click", ()=>{
+    menu.classLis.add("abrir-menu")
+})
+ /*botão rolagem*/

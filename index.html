@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/responsivo.css">
+    <script src="src/index.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portifólio</title>
 </head>
@@ -18,20 +19,23 @@
             <a href="">Contact</a>
             <a href=""><img src="images/icone-link.svg" alt=""></a>
         </div>
-        <div class="mobile-menu-icon">
-            <button onclick="menuShou()"><img src="https://www.svgrepo.com/show/474244/menu-fries.svg" alt="" class="icon"></button>
+        <div class="mobile-menu-icon" id="btn-menu">
+            <img src="https://www.svgrepo.com/show/474244/menu-fries.svg" alt="">
         </div>
         <div class="menu-mobile">
-            <a href="class="nav-item"">About</a>
-            <a href="class="nav-item"">Projects</a>
-            <a href="class="nav-item"">Abillyts</a>
-            <a href="class="nav-item"">Contact</a>
-            <a href="class="nav-item""><img src="images/icone-link.svg" alt =""></a>
+            <div class=""btn-fechar>
+                <i class="bi bi-x-lg"></i>
+                <nav>
+                    <a href="class="nav-item"">About</a>
+                    <a href="class="nav-item"">Projects</a>
+                    <a href="class="nav-item"">Abillyts</a>
+                    <a href="class="nav-item"">Contact</a>
+                    <a href="class="nav-item""><img src="images/icone-link.svg" alt =""></a>
+                </nav>
+            </div>
+            <div class="overley-menu"></div>
         </div>
     </header>
-
-    <script src="src/index.js"></script>
-
     <section id="section-apresentação">
         <div id="div-apre">
             <h3>Hello, world!</h3>
@@ -69,24 +73,48 @@
                 </div>
             </div>
         </section>
+        <section class="carroesel-projetos">
+            <div class="div-slides">
+                <input type= "radio" name="slides" id="slide1">
+                <input type= "radio" name="slides" id="slide2">
+                <input type= "radio" name="slides" id="slide3">
+                <input type= "radio" name="slides" id="slide4">
+                <input type= "radio" name="slides" id="slide5">
+                <div class="slide-div-img">
+
+                </div>
+                <div class="slide-div-img1">
+
+                </div>
+                <div class="slide-div-img">
+
+                </div>
+                <div class="slide-div-img">
+
+                </div>
+                <div class="slide-div-img">
+
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div id="div-footer" onclick="backtop();">
-            <button><img src="https://www.svgrepo.com/show/394626/arrow-two-up.svg" alt=""></button>
+        <div id="div-footer"">
+            <button class="scrollTop" onclick="backTop();"><img src="https://www.svgrepo.com/show/394626/arrow-two-up.svg" alt=""></button>
         </div>
-        <script>
-            window.addEventListener("scroll", function(){
-                let scroll= document.querySelector("#div-footer button")
-                    scroll.classList.toggle("active", window.scrollY > 450)
-            })
-
-            function backtop(){
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                })
-            }
-        </script>
     </footer>
+    <script>
+        window.addEventListener("scroll", function(){
+            let scroll = document.querySelector(".scrollTop")
+                scroll.classList.toggle("active",window.scrollY >450)
+        })
+
+        function backTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            })
+        }
+    </script>
 </body>
 </html>
