@@ -1,7 +1,27 @@
-let btnMenu = document.getElementById("btn-menu")
-let menu = document.getElementsById("menu-mobile")
+/*dark-theme*/
+const changeThemeBtn = document.querySelector("#change-theme");
+changeThemeBtn.addEventListener("change", function(){
+    document.body.classList.toggle("dark");
+});
 
-btnMenu,addEventListener("click", ()=>{
-    menu.classLis.add("abrir-menu")
-})
- /*botão rolagem*/
+/*toggle dark mode*/
+function toggleDarkMode(){
+    document.body.classList.toggle("dark");
+}
+
+/*//load and save theme/
+function loadTheme() {
+    const darkMode = localStorage.getItem("dark");
+    if(darkMode) {
+        toggleDarkMode();
+    }
+}
+
+loadTheme();
+changeThemeBtn.addEventListener("change", function(){
+    toggleDarkMode();
+    localStorage.removeItem("dark");
+    if(document.body.classList.contains("dark")) {
+        localStorage.setItem("dark", 1);
+    }
+});*/
