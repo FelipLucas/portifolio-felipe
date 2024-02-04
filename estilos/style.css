@@ -43,7 +43,7 @@ header h2{
     font-weight: 500;
     font-size: 14px;
     position: relative;
-    color: #ffffff;
+    color: #fff;
 }
 
 #div-header a::after{
@@ -134,15 +134,38 @@ input[type="checkbox"] {
 }
 
 /*Dark theme*/
-body, html{
+body{
     background-color: #000000;
     color: #ffffff;
     transition: .3s;
+    height: 100vh;
 }
 
-.dark, .dark header, .dark .span-efect::after, .dark .span-efect::before, .dark #div-footer button{
+.dark, .dark header, .dark .span-efect::after, .dark .span-efect::before, .dark #div-footer button, .dark #div-header a{
     background-color: #ffffff;
     color: #000000;
+}
+
+.dark #section-main button{
+    color: #fff;
+    background-color: rgba(132, 14, 201, 0.911);
+}
+
+.dark #section-main button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.dark #div-main1 img{
+    box-shadow: 10px 10px 10px 10px #000;
+}
+
+.dark .i-slid{
+    background-color: #ffffff;
+}
+
+.dark .bi-caret-left-fill, .dark .bi-caret-left-fill{
+    border: none;
 }
 
 .bi{
@@ -254,6 +277,7 @@ div.div-img{
     width: 100%;
     height: 76vw;
     margin-top: 12rem;
+    margin-bottom: 7rem;
     justify-content: center;
     align-items: center;
 }
@@ -309,14 +333,80 @@ div.div-img{
     margin-bottom: 2rem;
 }
 
+/*slider dos projects*/
 #carrosel-div{
     margin-left: 10%;
+    margin-bottom: 3rem
 }
 
 #carrosel-div h2{
     font-family: "JetBrains", monospace;
     font-weight: 500;
     font-size: 25px;
+}
+
+.container{
+    margin-bottom: 5rem;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: auto;
+}
+
+.sliders{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%, 0%, 0%, 0.25%);
+    box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
+    height: 100%;
+}
+
+.sliders img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 97%;
+    filter: brightness(75%);
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 55%;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+.i-slid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-caret-left-fill, .bi-caret-right-fill{
+    font-size: 30px;
+    border: 10px solid #000;
+    cursor: pointer;
 }
 
 #div-footer{
