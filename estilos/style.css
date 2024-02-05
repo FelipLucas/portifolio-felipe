@@ -164,8 +164,10 @@ body{
     background-color: #ffffff;
 }
 
-.dark .bi-caret-left-fill, .dark .bi-caret-left-fill{
+.dark .bi-caret-left-fill, .dark .bi-caret-right-fill{
     border: none;
+    margin-top: 10px;
+    color: #000;
 }
 
 .bi{
