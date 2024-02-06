@@ -31,19 +31,20 @@ header h2{
     font-size: 16px;
 }
 
-#div-header{
+#div-header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 
-#div-header a{
+#div-header nav a{
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     position: relative;
     color: #fff;
+    
 }
 
 #div-header a::after{
@@ -62,63 +63,11 @@ header h2{
 }
 
 /*Menu mobile*/
-.mobile-menu-icon{
+.navbar-mobile{
     display: none;
 }
 
-.mobile-menu-icon img{
-    font-size: 40px;
-    color: white;
-    border-radius: 10px;
-    background-color: #000;
-    box-shadow: #fff 0px 0px 20px, #fff 0px 0px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px 0px 5px;
-}
-
-.mobile-menu-icon img{
-    width: 30px;
-    height: 30px;
-}
-
-.menu-mobile{
-    display: none;
-    width: 0%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    overflow: hidden;
-}
-
-.menu-mobile.abrir-menu{
-    width: 100%;
-}
-
-.menu-mobile nav{
-    text-align: right;
-}
-
-.menu-mobile nav a{
-    padding: 20 8%;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.menu-mobile nav a:hover{
-    background-color: rgb(132, 14, 201);
-}
-
-.menu-mobile .btn-fechar{
-    padding: 20px 5%;
-}
-
-.menu-mobile .btn-fechar i{
-    color: rgb(132, 14, 201);
-    font-size: 30px;
-}
-
-.overley-menu{
+input[type="checkbox"] {
     display: none;
     width: 100%;
     height: 100%;
@@ -129,15 +78,15 @@ header h2{
     background-color: #000000a7;
 }
 
-input[type="checkbox"] {
-    display: none;
+label{
+    cursor: pointer;
 }
 
 /*Dark theme*/
 body{
     background-color: #000000;
     color: #ffffff;
-    transition: .3s;
+    transition: .6s;
     height: 100vh;
 }
 
@@ -156,6 +105,10 @@ body{
     color: #fff;
 }
 
+.dark .content-line:before{
+    background-color: #000;
+}
+
 .dark #div-main1 img{
     box-shadow: 10px 10px 10px 10px #000;
 }
@@ -170,21 +123,48 @@ body{
     color: #000;
 }
 
-.bi{
-    font-size: .8rem;
-    cursor: pointer;
+.dark .content-line{
+    width: 400px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.dark .div-img  a>i{
+    font-size: 30px;
+    color: #000000;
+}
+
+.dark .bi-github , .dark .bi-whatsapp, .dark .bi-linkedin{
+    color: #ffff;
+}
+
+.dark .div-contact, .dark .div-contact h3, .dark .div-contact p{
+    background-color: #000;
+    color: #fff;
+}
+
+.dark .button-enviar:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.dark .div-img i{
+    color: #000;
 }
 
 .bi-sun{
     display: none;
 }
 
-.dark bi-sun{
-    display: none;
+.dark .bi-sun{
+    display: block;
+    transition: .5;
 }
 
-.dark bi-moon{
-    display: block;
+.dark .bi-moon{
+    display: none;
 }
 
 #section-apresentação{
@@ -274,6 +254,26 @@ div.div-img{
     height: 30px;
 }
 
+.div-img i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.bi-github:hover{
+    transition: .5s;
+    color: rgb(119, 39, 194);
+}
+
+.bi-whatsapp:hover{
+    transition: .5s;
+    color: rgb(27, 204, 27);
+}
+
+.bi-linkedin:hover{
+    transition: .5s;
+    color: rgb(21, 90, 194);
+}
+
 #section-main{
     display: flex;
     width: 100%;
@@ -322,6 +322,9 @@ div.div-img{
     transition: 1s;
     background-color: #fff;
     color: #000;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    margin-top: -5px;
 }
 
 #div-main2{
@@ -348,7 +351,7 @@ div.div-img{
 }
 
 .container{
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .slider-wrapper{
@@ -409,6 +412,162 @@ div.div-img{
     font-size: 30px;
     border: 10px solid #000;
     cursor: pointer;
+}
+
+/*Linha do tempo*/
+.time-line{
+    display: flex;
+    font-family: "JetBrains", monospace;
+    padding: 5rem 0;
+    margin-left: 10rem;
+}
+
+.time-align{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: right;
+    align-items: right;
+}
+
+.time-line:before{
+    content: "";
+    position: absolute;
+    right:92.5%;
+    width: 2px;
+    height: 65%;
+    background: linear-gradient(to bottom, rgb(132, 14, 201), transparent);
+}
+
+.content-line{
+    width: 400px;
+    padding: 10px;
+    background-color: #ffeffe;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.content-line:before{
+    content: "";
+    position: absolute;
+    left: 6.97%;
+    width: 10px;
+    height: 10px;
+    margin-top: 0%;
+    background: #fff;
+    border: 2px solid #b800f0;
+    border-radius: 10px;
+}
+
+.content-line h3{
+    font-family: "JetBrains" monospace;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 3px
+}
+
+.p-large-line{
+    font-size: 14px;
+}
+
+.p-short-line{
+    width: 17%;
+    padding: 2px;
+    font-size: 11px;
+    background-color: rgba(132, 14, 201, 0.555);
+    text-align: center;
+}
+
+/*Formulario*/
+
+.div-contact{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-left: 5rem;
+    background-color: #fff;
+}
+
+.div-contact h3{
+    padding: 2rem 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+.div-contact p{
+    padding: 0 30px;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.b-grif{
+    background-color: rgb(132, 14, 201, 0.555);
+}
+
+.div-img2{
+    display: flex;    
+    margin-top: 1rem;
+    margin-left: 30px;
+}
+.div-img2 i{
+    font-size: 25px;
+    color: #000000;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.cadaster-contact1{
+    width: 60%;
+    padding: 10px;
+    background-color: #242424;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-family: "JetBrains", monospace;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-top: 2rem;
+}
+
+.cadaster-contact2{
+    width: 60%;
+    padding: 10px;
+    background-color: #242424;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-family: "JetBrains", monospace;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.button-enviar{
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: "JetBrains" monospace;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(84, 16, 124);
+}
+
+.button-enviar:hover{
+    transition: .5s;
+    cursor: pointer;
+    background-color: #000;
+    box-shadow: 0px 0px 15px #000;
+    color: #fff;
+    margin-top: -1px;
 }
 
 #div-footer{

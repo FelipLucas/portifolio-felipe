@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/responsivo.css">
-    <script src="src/index.js" defer></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Portifólio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos/style.css">
+<link rel="stylesheet" href="estilos/responsivo.css">
+<script src="src/index.js" defer></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<title>Portifólio</title>
 </head>
 <body>
     <header>
         <h2>Felipe Lucas</h2>
         <div id="div-header">
+        <nav>
             <a href="">About</a>
             <a href="">Projects</a>
             <a href="">Abillyts</a>
             <a href="">Contact</a>
-            <a href=""><img src="images/icone-link.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target="_blank"><img src="images/icone-link.svg" alt=""></a>
             <input type="checkbox" name="change-theme" id="change-theme">
+        </nav>
         </div>
         <label for="change-theme">
             <i class="bi bi-sun"></i>
             <i class="bi bi-moon"></i>
         </label>
-        <div class="mobile-menu-icon" id="btn-menu">
-            <img src="https://www.svgrepo.com/show/474244/menu-fries.svg" alt="">
-        </div>
-        <div class="menu-mobile">
-            <div class=""btn-fechar>
-                <i class="bi bi-x-lg"></i>
-                <nav>
-                    <a href="class="nav-item"">About</a>
-                    <a href="class="nav-item"">Projects</a>
-                    <a href="class="nav-item"">Abillyts</a>
-                    <a href="class="nav-item"">Contact</a>
-                    <a href="class="nav-item""><img src="images/icone-link.svg" alt =""></a>
-                </nav>
-            </div>
-            <div class="overley-menu"></div>
+        <!--Nv-bar menu mobile-->
+        <div class="navbar-mobile">
+            <img src="https://www.svgrepo.com/show/474244/menu-fries.svg" alt="" class="burger">
+            <nav class="mobile-links">
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Abillyts</a>
+                <a href="">Contact</a>
+                <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target="_blank"><img src="images/icone-link.svg" alt=""></a>
+            </nav>
         </div>
     </header>
     <section id="section-apresentação">
@@ -65,13 +62,13 @@
                 </a>
                 <div class="div-img">
                     <a href="https://github.com/FelipLucas" target="_blank">
-                        <img src="https://www.svgrepo.com/show/439171/github.svg" alt="Githun">
+                        <i class="bi bi-github"></i>
                     </a>
-                    <a href="">
-                        <img src="https://www.svgrepo.com/show/303150/whatsapp-symbol-logo.svg" alt="Whatsapp">
+                    <a href="https://wa.me//5511912655674?text=Ol%C3%A1" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target= "_blank">
-                        <img src="https://www.svgrepo.com/show/355096/linkedin.svg" alt="linkedin">
+                        <i class="bi bi-linkedin"></i>
                     </a>
                     <img alt="Felipe-HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"">
                     <img alt="Felipe-CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
@@ -106,6 +103,54 @@
                 <i class="bi bi-caret-right-fill" id="next-button"></i>
             </div>
         </section>
+        <section class="time-line">
+        <div class="time-align">
+            <div class="content-line">
+                <h3>Certificate in English</h3>
+                <p class="p-large-line">Kumon</p>
+                <p class="p-short-line">2020-2023</p>
+            </div>
+            <div class="content-line">
+                <h3>Certificate HTML5 and CSS3 basic</h3>
+                <p class="p-large-line">Module 1 and 2-Curso em Video</p>
+                <p class="p-short-line">2020-2021</p>
+            </div>
+            <div class="content-line">
+                <h3>Certificate in HTMl5 and CSS3</h3>
+                <p class="p-large-line">Module 3 and 4-Curso em Video</p>
+                <sub><p class="p-short-line">2023-2024</p></sub>
+            </div> 
+            <div class="content-line">
+                <h3>CursoDev<b>(studying)</b></h3>
+                <p class="p-large-line">CursoDev organization</p>
+                <p class="p-short-line">2024</p>
+            </div>
+        </div>
+            <div class="div-contact">
+                <h3>Contact-me</h3>
+                <p>I am currently looking for a <b class="b-grif">&lt;Junior Developer&gt</b> opportunity.</p>
+                <p>I am available to contact via the <b class="b-grif">form</b> and my <b class="b-grif">professional networks.</b></p>
+                <div class="div-img2">
+                    <a href="https://github.com/FelipLucas" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://wa.me//5511912655674?text=Ol%C3%A1" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target= "_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <form action="https://formsubmit.co/fefelbf@gmail.com" method="POST">
+                
+                <input type="text" placeholder="Name:" name="text" class="cadaster-contact1"  autocomplete="off" required>
+                
+                <input type="email" placeholder="E-mail:" name="email" class="cadaster-contact2" autocomplete="off" required> 
+                
+                <input type="submit" value="Sent >" class="button-enviar" required>
+            </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="div-footer"">
@@ -121,7 +166,7 @@
         function backTop(){
             window.scrollTo({
                 top: 0,
-                behavior: "smooth",
+                behavior:"smooth",
             })
         }
     </script>
