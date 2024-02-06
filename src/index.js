@@ -7,7 +7,7 @@ changeThemeBtn.addEventListener("change", function(){
 /*toggle dark mode*/
 function toggleDarkMode(){
     document.body.classList.toggle("dark");
-}
+};
 
 /*//load and save theme/
 function loadTheme() {
@@ -26,37 +26,13 @@ changeThemeBtn.addEventListener("change", function(){
     }
 });*/
 
-const slider = document.querySelectorAll(".slider")
-const btnPrev = document.getElementById("prev-button")
-const btnNext = document.getElementById("next-button")
+menu-mobile
+const navbar = document.querySelector('.navbar');
+const mobileNavbar = document.querySelector('.navbar-mobile');
+const button = document.querySelector('.burger');
 
-let currentSlide = 0;
-function hideSlider(){
-    slider.forEach(item => item.classList.remove("slider1"))
-}
-function showSlider(){
-    slider[currentSlide].classList.add("slider1")
-}
+button.addEventListener('click', function() {
+    mobileNavbar.classList.toggle('active');
+});
 
-function nextSlider(){
-    hideSlider()
-    if(currentSlide === slider,length -1){
-       currentSlide =0
-    } else{
-        currentSlide++
-    }
-    showSlider()
-}
-
-function prevSlider(){
-    hideSlider()
-    if(currentSlide ===0){
-       currentSlide = slider.length -1
-    } else{
-        currentSlide--
-    }
-    showSlider()
-}
-btnNext.addEventListener("click", nextSlider)
-btnNext.addEventListener("click", prevSlider)
-console.log(slider)
+/*Rolagem de tela*/

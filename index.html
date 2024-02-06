@@ -13,16 +13,16 @@
 <body>
     <header>
         <h2>Felipe Lucas</h2>
+        <nav class="navbar">
         <div id="div-header">
-        <nav>
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Abillyts</a>
-            <a href="">Contact</a>
-            <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target="_blank"><img src="images/icone-link.svg" alt=""></a>
+            <a href="#section-main" class="links-mobile2">About</a>
+            <a href="#carrosel-div" class="links-mobile2">Projects</a>
+            <a href="#time-line" class="links-mobile2">Abillyts</a>
+            <a href="#time-line" class="links-mobile2">Contact</a>
+            <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target="_blank" class="links-mobile2"><img src="images/icone-link.svg" alt=""></a>
             <input type="checkbox" name="change-theme" id="change-theme">
-        </nav>
         </div>
+        </nav>
         <label for="change-theme">
             <i class="bi bi-sun"></i>
             <i class="bi bi-moon"></i>
@@ -31,12 +31,14 @@
         <div class="navbar-mobile">
             <img src="https://www.svgrepo.com/show/474244/menu-fries.svg" alt="" class="burger">
             <nav class="mobile-links">
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Abillyts</a>
-                <a href="">Contact</a>
+                <a href="" class="links-mobile">About</a>
+                <a href="" class="links-mobile">Projects</a>
+                <a href="" class="links-mobile">Abillyts</a>
+                <a href="" class="links-mobile">Contact</a>
                 <a href="https://www.linkedin.com/in/felipe-lucas-4a45262a8/" target="_blank"><img src="images/icone-link.svg" alt=""></a>
             </nav>
+        </div>
+        <div class="overlay-menu">
         </div>
     </header>
     <section id="section-apresentação">
@@ -91,11 +93,11 @@
                 </div>
                 <div class="slider-nav">
                     <a href="https://feliplucas.github.io/Buosi-moda-feminina/" target="_blank"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="slide-3"></a>
-                    <a href="slide-3"></a>
-                    <a href="slide-3"></a>
+                    <a href="https://feliplucas.github.io/Projeto-Gta/" target="_blank"></a>
+                    <a href="https://feliplucas.github.io/marketing-landind-page/" target="_blank"></a>
+                    <a href="https://feliplucas.github.io/Landing-pages-work/" target="_blank"></a>
+                    <a href="https://feliplucas.github.io/projeto-cordel/" target="_blank"></a>
+                    <a href="https://feliplucas.github.io/projeto-android/" target="_blank"></a>
                 </div>
             </div>
             <div class="i-slid">
@@ -103,7 +105,7 @@
                 <i class="bi bi-caret-right-fill" id="next-button"></i>
             </div>
         </section>
-        <section class="time-line">
+        <section id="time-line">
         <div class="time-align">
             <div class="content-line">
                 <h3>Certificate in English</h3>
@@ -126,6 +128,7 @@
                 <p class="p-short-line">2024</p>
             </div>
         </div>
+        <div class="align-bloco">
             <div class="div-contact">
                 <h3>Contact-me</h3>
                 <p>I am currently looking for a <b class="b-grif">&lt;Junior Developer&gt</b> opportunity.</p>
@@ -150,6 +153,7 @@
                 <input type="submit" value="Sent >" class="button-enviar" required>
             </form>
             </div>
+        </div>
         </section>
     </main>
     <footer>

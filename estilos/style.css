@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
+html{
     scroll-behavior: smooth;
 }
 
@@ -31,20 +31,20 @@ header h2{
     font-size: 16px;
 }
 
-#div-header nav{
+#div-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 
-#div-header nav a{
+#div-header a{
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     position: relative;
     color: #fff;
-    
+    font-family: "JetBrains", monospace;
 }
 
 #div-header a::after{
@@ -67,7 +67,7 @@ header h2{
     display: none;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]#change-theme{
     display: none;
     width: 100%;
     height: 100%;
@@ -81,6 +81,8 @@ input[type="checkbox"] {
 label{
     cursor: pointer;
 }
+
+
 
 /*Dark theme*/
 body{
@@ -351,13 +353,19 @@ div.div-img{
 }
 
 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 11rem;
     margin-bottom: 10rem;
+    border: none;
 }
 
 .slider-wrapper{
     position: relative;
     max-width: 48rem;
-    margin: auto;
+    margin-left: 0%;
 }
 
 .sliders{
@@ -366,7 +374,6 @@ div.div-img{
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%, 0%, 0%, 0.25%);
     box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
     height: 100%;
 }
@@ -415,11 +422,12 @@ div.div-img{
 }
 
 /*Linha do tempo*/
-.time-line{
+#time-line{
     display: flex;
     font-family: "JetBrains", monospace;
     padding: 5rem 0;
     margin-left: 10rem;
+    margin-top: 16rem;
 }
 
 .time-align{
@@ -430,7 +438,7 @@ div.div-img{
     align-items: right;
 }
 
-.time-line:before{
+#time-line:before{
     content: "";
     position: absolute;
     right:92.5%;
@@ -450,7 +458,7 @@ div.div-img{
 .content-line:before{
     content: "";
     position: absolute;
-    left: 6.97%;
+    left: 7.1%;
     width: 10px;
     height: 10px;
     margin-top: 0%;
@@ -484,6 +492,7 @@ div.div-img{
     display: flex;
     flex-direction: column;
     width: 700px;
+    height: 100%;
     margin-left: 5rem;
     background-color: #fff;
 }
