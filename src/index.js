@@ -19,15 +19,11 @@ button.addEventListener('click', function() {
 });
 
 /*carrossel*/
-var swiper = new Swiper(".swiper", {
-    cssMode: true,
-    loop: true,
-    navigation:{
-        nextEl: ".swiper-button-next",
-        prevEL: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination"
-    },
-    keyboard: true,
-})
+var radio = document.querySelector('.manual-btn')
+document.getElementById('iradio1').checked = true
+setInterval(() => {
+    proximaImg()
+}, 5000)
+function proximaImg(){
+    
+}

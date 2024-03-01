@@ -23,7 +23,7 @@ header{
     padding-top: 1%;
     padding-left: 15%;
     padding-right: 10%;
-    margin-bottom: -40%;
+    margin-bottom: -45%;
 }
 
 header h2{
@@ -341,7 +341,7 @@ div.div-img{
 #carrosel-div{
     margin-left: 10%;
     margin-bottom: 3rem;
-    margin-top: 11rem;
+    margin-top: 15rem;
     border: none;
 }
 
@@ -432,7 +432,6 @@ div.div-img{
     display: flex;
     width: 400%;
     height: auto;
-    box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
 }
 
 .slider-content input{
@@ -447,13 +446,15 @@ div.div-img{
 }
 
 .slide-box1 a img{
-    width: 950px;
+    width: 850px;
     height: 500px;
+    object-fit: cover;
 }
 
 .slide-box a img{
-    width: 950px;
+    width: 850px;
     height: 500px;
+    object-fit: cover;
 }
 
 .nav-manual{
@@ -462,6 +463,42 @@ div.div-img{
     position: absolute;
     width: 100%;
     margin-top: 35%;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.manual-btn{
+    display: flex;
+    gap: 1rem;
+    padding: 3px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    width: 10px;
+    border-radius: 10px;
+    /*box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;*/
+}
+
+.manual-btn:hover{
+    transition: .2s;
+    box-shadow: #fff 0px .5px 5px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
+    background-color: #ffffff;
+}
+
+.nav-manual .manual-btn:not(:last-child){
+
+}
+
+#radio1:checked ~ .nav-manual .manual-btn #radio2:checked ~ .nav-manual .manual-btn{
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .slide-box a img{
+    margin-left: -25%;
+}
+
+#radio1:checked ~ .slide-box1 a img{
+    margin-left: -50%;
 }
 
 /*Linha do tempo*/
