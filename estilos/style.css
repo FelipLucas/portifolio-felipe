@@ -23,7 +23,7 @@ header{
     padding-top: 1%;
     padding-left: 15%;
     padding-right: 10%;
-    margin-bottom: 13%;
+    margin-bottom: -40%;
 }
 
 header h2{
@@ -172,7 +172,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: 100%;
 }
 
 #div-apre{
@@ -341,7 +340,9 @@ div.div-img{
 /*slider dos projects*/
 #carrosel-div{
     margin-left: 10%;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
+    margin-top: 11rem;
+    border: none;
 }
 
 #carrosel-div h2{
@@ -350,7 +351,7 @@ div.div-img{
     font-size: 25px;
 }
 
-.container{
+/*.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,6 +418,50 @@ div.div-img{
     font-size: 30px;
     border: 10px solid #000;
     cursor: pointer;
+}*/
+
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    display: flex;
+    width: 400%;
+    height: auto;
+    box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide-box1 a img{
+    width: 950px;
+    height: 500px;
+}
+
+.slide-box a img{
+    width: 950px;
+    height: 500px;
+}
+
+.nav-manual{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
 }
 
 /*Linha do tempo*/

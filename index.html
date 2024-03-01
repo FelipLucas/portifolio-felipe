@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="estilos/style.css">
 <link rel="stylesheet" href="estilos/responsivo.css">
 <script src="src/index.js" defer></script>
-<script src="https://unpkg.com/scrollreveal"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <title>Portifólio</title>
 </head>
 <body>
@@ -81,7 +82,7 @@
         <div id="carrosel-div">
             <h2>My projects</h2>
         </div>
-        <section class="container">
+        <!--<section class="container">
             <div class="slider-wrapper">
                 <div class="sliders">
                     <img src="images/image2.png" alt="" class="slider1">
@@ -103,6 +104,42 @@
             <div class="i-slid">
                 <i class="bi bi-caret-left-fill" id="prev-button"></i>
                 <i class="bi bi-caret-right-fill" id="next-button"></i>
+            </div>
+        </section> -->
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="iradio1">
+                <input type="radio" name="btn-radio" id="iradio2">
+                <input type="radio" name="btn-radio" id="iradio3">
+                <input type="radio" name="btn-radio" id="iradio4">
+                <input type="radio" name="btn-radio" id="iradio5">
+                <input type="radio" name="btn-radio" id="iradio6">
+                <div class="nav-manual">
+                    <label for="iradio1"></label>
+                    <label for="iradio2"></label>
+                    <label for="iradio3"></label>
+                    <label for="iradio4"></label>
+                    <label for="iradio5"></label>
+                    <label for="iradio6"></label>
+                </div>
+                <div class="slide-box1">
+                    <a href=""><img src="images/image2.png" alt=""></a>
+                </div>
+                <div class="slide-box">
+                    <a href=""><img src="images/image7.png" alt=""></a>
+                </div>
+                <div class="slide-box">
+                    <a href=""><img src="images/2024-02-24 22.50.35  0ffd9147a1bc.png" alt=""></a>
+                </div>
+                <div class="slide-box">
+                    <a href=""><img src="images/atf.png" alt=""></a>
+                </div>
+                <div class="slide-box">
+                    <a href=""><img src="images/image3.png" alt=""></a>
+                </div>
+                <div class="slide-box">
+                    <a href=""><img src="images/image4.png" alt=""></a>
+                </div>
             </div>
         </section>
         <section id="time-line">
