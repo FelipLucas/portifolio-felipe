@@ -19,15 +19,3 @@ button.addEventListener('click', function() {
 });
 
 /*carrossel*/
-var radio = document.querySelector('.manual-btn')
-document.getElementById('iradio1').checked = true
-setInterval(() => {
-    proximaImg()
-}, 5000)
-function proximaImg(){
-    cont++
-    if(cont > 6){
-        cont = 1
-    }
-    document.getElementById('radio' +cont).checked = true
-}

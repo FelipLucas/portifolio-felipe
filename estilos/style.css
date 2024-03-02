@@ -167,6 +167,10 @@ body{
     display: none;
 }
 
+.dark .slider{
+    box-shadow: #000 0px .5px 50px, #000 0px 5px 50px, #000 0px 4px 6px, #000 0px 5px 20px, #000 0px -3px 5px;
+}
+
 #section-apresentação{
     display: flex;
     justify-content: center;
@@ -338,14 +342,14 @@ div.div-img{
 }
 
 /*slider dos projects*/
-.carrosel-div{
+#carrosel-div{
     margin-left: 10%;
     margin-bottom: 6rem;
     margin-top: 15rem;
     border: none;
 }
 
-.carrosel-div h2{
+#carrosel-div h2{
     font-family: "JetBrains", monospace;
     font-weight: 500;
     font-size: 25px;
@@ -425,7 +429,7 @@ div.div-img{
     width: 850px;
     height: 500px;
     overflow: hidden;
-    box-shadow: #fff 0px .5px 20px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
+    box-shadow: #fff 0px .5px 50px, #fff 0px 5px 20px, #fff 0px 4px 6px, #fff 0px 5px 13px, #fff 0px -3px 5px;
 }
 
 .slides{
@@ -446,9 +450,9 @@ div.div-img{
 }
 
 .manual-btn{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    width: 40px;
+    height: 10px;
+    border-radius: 15px;
     background-color: #000000;
     opacity: 65%;
     transition: opacity ease 250ms;
@@ -487,6 +491,7 @@ div.div-img{
     display: flex;
     width: 500%;
     height: 100%;
+    transform: translateX(0);
 }
 
 .slide{
