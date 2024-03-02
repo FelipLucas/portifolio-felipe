@@ -450,9 +450,9 @@ div.div-img{
 }
 
 .manual-btn{
-    width: 40px;
-    height: 10px;
-    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
     background-color: #000000;
     opacity: 65%;
     transition: opacity ease 250ms;
@@ -464,9 +464,9 @@ div.div-img{
 }
 
 .navegation-auto{
-    width: 40px;
-    height: 6px;
-    border-radius: 15px;
+    width: 15px;
+    height: 5px;
+    border-radius: 50%;
     background-color: #000000;
     opacity: 55%;
     transition: opacity ease 250ms;
@@ -526,23 +526,23 @@ div.div-img{
 }
 
 #iradio1:checked ~ .navegation-auto .auto-btn1{
-    opacity: 1;
+    background-color: #000;
 }
 
-#iradio2:checked ~ .navegation-auto .auto-btn1{
-    opacity: 1;
+#iradio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: #000;
 }
 
-#iradio3:checked ~ .navegation-auto .auto-btn1{
-    opacity: 1;
+#iradio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: #000;
 }
 
-#iradio4:checked ~ .navegation-auto .auto-btn1{
-    opacity: 1;
+#iradio4:checked ~ .navegation-auto .auto-btn4{
+    background-color: #000;
 }
 
-#iradio5:checked ~ .navegation-auto .auto-btn1{
-    opacity: 1;
+#iradio5:checked ~ .navegation-auto .auto-btn5{
+    background-color: #000;
 }
 
 /*Linha do tempo*/

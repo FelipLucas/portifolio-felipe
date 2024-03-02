@@ -1,3 +1,16 @@
+/*rolagem para o topo*/
+window.addEventListener("scroll", function(){
+    let scroll = document.querySelector(".scrollTop")
+        scroll.classList.toggle("active",window.scrollY >450)
+})
+
+function backTop(){
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth",
+    })
+}
+
 /*dark-theme*/
 const changeThemeBtn = document.querySelector("#change-theme");
 changeThemeBtn.addEventListener("change", function(){
@@ -19,3 +32,17 @@ button.addEventListener('click', function() {
 });
 
 /*carrossel*/
+var radio = document.querySelector('.manual-btn')
+var cont = 1
+
+document.getElementById('iradio1').checked = true
+setInterval(() => {
+    proximaImg()
+}, 5000)
+function proximaImg(){
+    cont++
+    if(cont >5){
+        cont =1
+    }
+    document.getElementById('iradio' +cont).checked = true
+}
