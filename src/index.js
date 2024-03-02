@@ -46,3 +46,5 @@ function proximaImg(){
     }
     document.getElementById('iradio' +cont).checked = true
 }
+
+/*Envio de formulario*/

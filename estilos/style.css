@@ -667,6 +667,13 @@ form{
     margin-bottom: 5px;
     margin-left: 30px;
     margin-top: 2rem;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+.cadaster-contact1:hover .cadaster-contact1:focus{
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 0 .3125rem #000000db;
 }
 
 .cadaster-contact2{
